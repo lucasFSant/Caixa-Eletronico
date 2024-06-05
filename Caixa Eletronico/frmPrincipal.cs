@@ -70,12 +70,7 @@ namespace Caixa_Eletronico
 
         private void frmPrincipal_Load_1(object sender, EventArgs e)
         {
-            lblSaldo.Text = s.conta_logada.Saldo.ToString();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            lblSaldo.Text = "R$"+s.conta_logada.Saldo.ToString();
         }
     }
 }

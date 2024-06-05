@@ -28,8 +28,15 @@ namespace Caixa_Eletronico
 
         private void btSacar_Click(object sender, EventArgs e)
         {
-            double valor = (double)numSacar.Value;
-            s.conta_logada.Sacar(valor);
+            double valor = (double)numSacar.Value;   
+            if (s.conta_logada.Sacar(valor))
+            {
+                MessageBox.Show("Saque Realizado com Sucesso");
+            }
+            else
+            {
+                MessageBox.Show("N deu certo, burrokkk");
+            }
         }
     }
 }

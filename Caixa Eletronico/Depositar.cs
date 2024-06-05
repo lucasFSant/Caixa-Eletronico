@@ -29,7 +29,14 @@ namespace Caixa_Eletronico
         private void btDepositar_Click(object sender, EventArgs e)
         {
             double valor = (double)numDepositar.Value;
-            s.conta_logada.Depositar(valor);
+            if (s.conta_logada.Depositar(valor))
+            {
+                MessageBox.Show("Depósito Realizado com Sucesso");
+            }
+            else
+            {
+                MessageBox.Show("N deu certo, burrokkk");
+            }
         }
     }
 }

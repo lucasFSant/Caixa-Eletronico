@@ -40,9 +40,10 @@
             // 
             btSacar.BackColor = SystemColors.MenuHighlight;
             btSacar.Font = new Font("Segoe UI", 16.2F);
-            btSacar.Location = new Point(332, 281);
+            btSacar.Location = new Point(290, 211);
+            btSacar.Margin = new Padding(3, 2, 3, 2);
             btSacar.Name = "btSacar";
-            btSacar.Size = new Size(171, 73);
+            btSacar.Size = new Size(150, 55);
             btSacar.TabIndex = 0;
             btSacar.Text = "Sacar";
             btSacar.UseVisualStyleBackColor = false;
@@ -52,28 +53,29 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(332, 14);
+            label1.Location = new Point(290, 10);
             label1.Name = "label1";
-            label1.Size = new Size(110, 50);
+            label1.Size = new Size(88, 41);
             label1.TabIndex = 1;
             label1.Text = "Sacar";
             // 
             // numSacar
             // 
             numSacar.Font = new Font("Segoe UI", 16.2F);
-            numSacar.Location = new Point(386, 172);
+            numSacar.Location = new Point(338, 129);
+            numSacar.Margin = new Padding(3, 2, 3, 2);
             numSacar.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             numSacar.Name = "numSacar";
-            numSacar.Size = new Size(150, 43);
+            numSacar.Size = new Size(131, 36);
             numSacar.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16.2F);
-            label2.Location = new Point(291, 174);
+            label2.Location = new Point(255, 130);
             label2.Name = "label2";
-            label2.Size = new Size(85, 38);
+            label2.Size = new Size(67, 30);
             label2.TabIndex = 3;
             label2.Text = "Valor:";
             // 
@@ -81,9 +83,10 @@
             // 
             bttVoltar.BackColor = SystemColors.MenuHighlight;
             bttVoltar.Font = new Font("Segoe UI", 16.2F);
-            bttVoltar.Location = new Point(12, 12);
+            bttVoltar.Location = new Point(10, 9);
+            bttVoltar.Margin = new Padding(3, 2, 3, 2);
             bttVoltar.Name = "bttVoltar";
-            bttVoltar.Size = new Size(125, 61);
+            bttVoltar.Size = new Size(124, 62);
             bttVoltar.TabIndex = 4;
             bttVoltar.Text = "Voltar";
             bttVoltar.UseVisualStyleBackColor = false;
@@ -91,15 +94,16 @@
             // 
             // Sacar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 192, 192);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(bttVoltar);
             Controls.Add(label2);
             Controls.Add(numSacar);
             Controls.Add(label1);
             Controls.Add(btSacar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Sacar";
             Text = "Sacar";
             ((System.ComponentModel.ISupportInitialize)numSacar).EndInit();
